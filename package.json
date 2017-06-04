@@ -1,8 +1,8 @@
 {
-  "name": "skeleton-node",
+  "name": "vegaholic-data",
   "author": "Benjamin Pearson",
   "version": "0.0.0",
-  "description": "Node project skeleton",
+  "description": "Data generator for the Vegaholic iOS app",
   "license": "Unlicense",
   "main": "src/index.js",
   "engines": {
@@ -24,14 +24,6 @@
   },
   "pre-commit": "pre-commit",
   "jest": {
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    },
     "collectCoverageFrom": [
       "src/**/*.{js}"
     ]
@@ -61,10 +53,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/benjaminpearson/skeleton-node.git"
+    "url": "git+https://github.com/benjaminpearson/vegaholic-data.git"
   },
   "bugs": {
-    "url": "https://github.com/benjaminpearson/skeleton-node/issues"
+    "url": "https://github.com/benjaminpearson/vegaholic-data/issues"
   },
-  "homepage": "https://github.com/benjaminpearson/skeleton-node#readme"
+  "homepage": "https://github.com/benjaminpearson/vegaholic-data#readme"
 }
