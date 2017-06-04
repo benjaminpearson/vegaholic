@@ -1,0 +1,70 @@
+{
+  "name": "skeleton-node",
+  "author": "Benjamin Pearson",
+  "version": "0.0.0",
+  "description": "Node project skeleton",
+  "license": "Unlicense",
+  "main": "src/index.js",
+  "engines": {
+    "node": "6.9.1"
+  },
+  "scripts": {
+    "docs": "scripts/docs",
+    "lint": "scripts/lint",
+    "lint:staged": "lint-staged",
+    "pre-commit": "scripts/pre-commit",
+    "release": "scripts/release",
+    "start": "node src/index",
+    "test": "scripts/test",
+    "verify": "scripts/verify"
+  },
+  "lint-staged": {
+    "*.js": "eslint --ext .js",
+    "*.json": "eslint --ext .json"
+  },
+  "pre-commit": "pre-commit",
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "collectCoverageFrom": [
+      "src/**/*.{js}"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "3.19.0",
+    "eslint-config-airbnb-base": "11.2.0",
+    "eslint-plugin-eslint-comments": "1.0.1",
+    "eslint-plugin-import": "2.3.0",
+    "eslint-plugin-jest": "20.0.3",
+    "eslint-plugin-jsdoc": "3.1.0",
+    "eslint-plugin-json": "1.2.0",
+    "eslint-plugin-lodash": "2.4.2",
+    "eslint-plugin-no-loops": "0.3.0",
+    "eslint-plugin-node": "5.0.0",
+    "eslint-plugin-unicorn": "2.1.1",
+    "github-publish-release": "4.0.0",
+    "jest": "20.0.4",
+    "jsdoc": "3.4.3",
+    "lint-staged": "3.6.0",
+    "nsp": "2.6.3",
+    "pre-commit": "1.2.2"
+  },
+  "dependencies": {
+    "docdash": "0.4.0",
+    "lodash": "4.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benjaminpearson/skeleton-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benjaminpearson/skeleton-node/issues"
+  },
+  "homepage": "https://github.com/benjaminpearson/skeleton-node#readme"
+}

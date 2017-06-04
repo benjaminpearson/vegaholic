@@ -1,0 +1,8 @@
+#!/bin/bash
+
+echo 'Verifying codebase ...'
+npm run lint;
+echo 'Checking security using nsp ...'
+nsp check --warn-only;
+npm test --coverage;
+echo 'Finished verifying codebase.'

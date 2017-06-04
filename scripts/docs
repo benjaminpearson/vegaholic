@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo 'Generating jsdocs ...'
+jsdoc --configure ./.jsdoc.json --verbose
+echo 'Finished generating jsdocs.'
+
+if [ -n "$npm_config_open" ]; then
+  echo 'Opening jsdocs..';
+  open './docs/jsdoc/index.html';
+fi
